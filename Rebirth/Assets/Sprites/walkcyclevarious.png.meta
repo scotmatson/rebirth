@@ -1,0 +1,1103 @@
+fileFormatVersion: 2
+guid: 26c7461e23024419e8c496f718809379
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: walkcyclevarious_0
+    21300002: walkcyclevarious_1
+    21300004: walkcyclevarious_2
+    21300006: walkcyclevarious_3
+    21300008: walkcyclevarious_4
+    21300010: walkcyclevarious_5
+    21300012: walkcyclevarious_6
+    21300014: walkcyclevarious_7
+    21300016: walkcyclevarious_8
+    21300018: walkcyclevarious_9
+    21300020: walkcyclevarious_10
+    21300022: walkcyclevarious_11
+    21300024: walkcyclevarious_12
+    21300026: walkcyclevarious_13
+    21300028: walkcyclevarious_14
+    21300030: walkcyclevarious_15
+    21300032: walkcyclevarious_16
+    21300034: walkcyclevarious_17
+    21300036: walkcyclevarious_18
+    21300038: walkcyclevarious_19
+    21300040: walkcyclevarious_20
+    21300042: walkcyclevarious_21
+    21300044: walkcyclevarious_22
+    21300046: walkcyclevarious_23
+    21300048: walkcyclevarious_24
+    21300050: walkcyclevarious_25
+    21300052: walkcyclevarious_26
+    21300054: walkcyclevarious_27
+    21300056: walkcyclevarious_28
+    21300058: walkcyclevarious_29
+    21300060: walkcyclevarious_30
+    21300062: walkcyclevarious_31
+    21300064: walkcyclevarious_32
+    21300066: walkcyclevarious_33
+    21300068: walkcyclevarious_34
+    21300070: walkcyclevarious_35
+    21300072: walkcyclevarious_36
+    21300074: walkcyclevarious_37
+    21300076: walkcyclevarious_38
+    21300078: walkcyclevarious_39
+    21300080: walkcyclevarious_40
+    21300082: walkcyclevarious_41
+    21300084: walkcyclevarious_42
+    21300086: walkcyclevarious_43
+    21300088: walkcyclevarious_44
+    21300090: walkcyclevarious_45
+    21300092: walkcyclevarious_46
+    21300094: walkcyclevarious_47
+    21300096: walkcyclevarious_48
+    21300098: walkcyclevarious_49
+    21300100: walkcyclevarious_50
+    21300102: walkcyclevarious_51
+    21300104: walkcyclevarious_52
+    21300106: walkcyclevarious_53
+    21300108: walkcyclevarious_54
+    21300110: walkcyclevarious_55
+    21300112: walkcyclevarious_56
+    21300114: walkcyclevarious_57
+    21300116: walkcyclevarious_58
+    21300118: walkcyclevarious_59
+    21300120: walkcyclevarious_60
+    21300122: walkcyclevarious_61
+    21300124: walkcyclevarious_62
+    21300126: walkcyclevarious_63
+    21300128: walkcyclevarious_64
+    21300130: walkcyclevarious_65
+    21300132: walkcyclevarious_66
+    21300134: walkcyclevarious_67
+    21300136: walkcyclevarious_68
+    21300138: walkcyclevarious_69
+    21300140: walkcyclevarious_70
+    21300142: walkcyclevarious_71
+    21300144: walkcyclevarious_72
+    21300146: walkcyclevarious_73
+    21300148: walkcyclevarious_74
+    21300150: walkcyclevarious_75
+    21300152: walkcyclevarious_76
+    21300154: walkcyclevarious_77
+    21300156: walkcyclevarious_78
+    21300158: walkcyclevarious_79
+    21300160: walkcyclevarious_80
+    21300162: walkcyclevarious_81
+    21300164: walkcyclevarious_82
+    21300166: walkcyclevarious_83
+    21300168: walkcyclevarious_84
+    21300170: walkcyclevarious_85
+    21300172: walkcyclevarious_86
+    21300174: walkcyclevarious_87
+    21300176: walkcyclevarious_88
+    21300178: walkcyclevarious_89
+    21300180: walkcyclevarious_90
+    21300182: walkcyclevarious_91
+    21300184: walkcyclevarious_92
+    21300186: walkcyclevarious_93
+    21300188: walkcyclevarious_94
+    21300190: walkcyclevarious_95
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: walkcyclevarious_0
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 428
+        width: 17
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_1
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 430
+        width: 17
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_2
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 428
+        width: 17
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_3
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 429
+        width: 21
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_4
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 430
+        width: 17
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_5
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 428
+        width: 22
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_6
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 428
+        width: 17
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_7
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 430
+        width: 17
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_8
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 428
+        width: 17
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_9
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 428
+        width: 22
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_10
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 430
+        width: 17
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_11
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 429
+        width: 21
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_12
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 366
+        width: 17
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_13
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 368
+        width: 17
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_14
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 366
+        width: 17
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_15
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 367
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_16
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 368
+        width: 17
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_17
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 366
+        width: 22
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_18
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 366
+        width: 17
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_19
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 368
+        width: 17
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_20
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 366
+        width: 17
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_21
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 366
+        width: 22
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_22
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 368
+        width: 17
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_23
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 367
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_24
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 308
+        width: 15
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_25
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 310
+        width: 17
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_26
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 308
+        width: 15
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_27
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 309
+        width: 21
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_28
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 310
+        width: 14
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_29
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 308
+        width: 22
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_30
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 308
+        width: 15
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_31
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 310
+        width: 17
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_32
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 308
+        width: 15
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_33
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 308
+        width: 22
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_34
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 310
+        width: 14
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_35
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 309
+        width: 21
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_36
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 247
+        width: 15
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_37
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 249
+        width: 17
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_38
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 247
+        width: 15
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_39
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 248
+        width: 21
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_40
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 249
+        width: 14
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_41
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 247
+        width: 22
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_42
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 247
+        width: 15
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_43
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 249
+        width: 17
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_44
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 247
+        width: 15
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_45
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 247
+        width: 22
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_46
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 249
+        width: 14
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_47
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 248
+        width: 21
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_48
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 186
+        width: 15
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_49
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 188
+        width: 17
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_50
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 186
+        width: 15
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_51
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 187
+        width: 21
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_52
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 188
+        width: 14
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_53
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 186
+        width: 22
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_54
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 186
+        width: 15
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_55
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 188
+        width: 17
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_56
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 186
+        width: 15
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_57
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 186
+        width: 22
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_58
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 188
+        width: 14
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_59
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 187
+        width: 21
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_60
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 125
+        width: 15
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_61
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 127
+        width: 17
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_62
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 125
+        width: 15
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_63
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 126
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_64
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 127
+        width: 15
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_65
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 125
+        width: 22
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_66
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 125
+        width: 15
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_67
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 127
+        width: 17
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_68
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 125
+        width: 15
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_69
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 125
+        width: 22
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_70
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 127
+        width: 15
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_71
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 126
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_72
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 64
+        width: 15
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_73
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 66
+        width: 17
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_74
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 64
+        width: 15
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_75
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 65
+        width: 21
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_76
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 66
+        width: 17
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_77
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 64
+        width: 22
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_78
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 64
+        width: 17
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_79
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 66
+        width: 18
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_80
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 64
+        width: 15
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_81
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 64
+        width: 22
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_82
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 66
+        width: 17
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_83
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 65
+        width: 21
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_84
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 0
+        width: 17
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_85
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 2
+        width: 17
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_86
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 0
+        width: 17
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_87
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 1
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_88
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 2
+        width: 17
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_89
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 0
+        width: 22
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_90
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 0
+        width: 17
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_91
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 2
+        width: 17
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_92
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 0
+        width: 17
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_93
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 0
+        width: 22
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_94
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 2
+        width: 17
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walkcyclevarious_95
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 1
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
