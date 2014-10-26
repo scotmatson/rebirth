@@ -4,11 +4,13 @@ using System.Collections;
 public class PlayerState : MonoBehaviour {
 
 	public static float health;
+	public static float treasure;
 	public bool isAlive;
 
 	// Use this for initialization
 	void Start () {
 		health = 1000F;
+		treasure = 0F;
 		isAlive = true;
 	}
 	
