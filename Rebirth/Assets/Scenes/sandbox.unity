@@ -644,7 +644,7 @@ GameObject:
   - 136: {fileID: 1477780899}
   - 23: {fileID: 1477780898}
   m_Layer: 0
-  m_Name: pDestroy
+  m_Name: pDeath
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -730,6 +730,53 @@ Transform:
   - {fileID: 115564061}
   - {fileID: 1477780901}
   m_Father: {fileID: 0}
+  m_RootOrder: 1
+--- !u!1 &1745265493
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1745265495}
+  - 131: {fileID: 1745265494}
+  m_Layer: 0
+  m_Name: Flash
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!131 &1745265494
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1745265493}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: ea26fd25ed6dc60498f91840aa1a9faa, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_PixelInset:
+    serializedVersion: 2
+    x: -64
+    y: -29
+    width: 128
+    height: 58
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
+--- !u!4 &1745265495
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1745265493}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .5, y: .5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0}
+  m_Children: []
+  m_Father: {fileID: 1998410223}
   m_RootOrder: 1
 --- !u!1 &1951486029
 GameObject:
@@ -845,6 +892,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 760863505}
+  - {fileID: 1745265495}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!114 &1998410224

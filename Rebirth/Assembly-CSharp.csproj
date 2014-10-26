@@ -57,6 +57,7 @@
      <Compile Include="Assets\Scripts\PlayerScripts\Player.cs" />
      <Compile Include="Assets\Scripts\PlayerScripts\PlayerHealth.cs" />
      <Compile Include="Assets\Scripts\PlayerScripts\PlayerState.cs" />
+     <Compile Include="Assets\Scripts\ScreenFlash.cs" />
      <Compile Include="Assets\Scripts\Shot.cs" />
      <Compile Include="Assets\Scripts\SpriteDamage.cs" />
   </ItemGroup>
