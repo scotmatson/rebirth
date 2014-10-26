@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PlayerState : MonoBehaviour {
 
-	public float health = 1000F;
+	public static float health;
 	public bool isAlive;
 
 	// Use this for initialization

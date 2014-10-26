@@ -186,6 +186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7578ba3785281bd479eea23094b69800, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerState: {fileID: 1998410224}
 --- !u!132 &860499407
 GUIText:
   m_ObjectHideFlags: 0
@@ -235,7 +236,7 @@ GameObject:
   - 143: {fileID: 1998410221}
   - 114: {fileID: 1998410224}
   m_Layer: 0
-  m_Name: Guy
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
