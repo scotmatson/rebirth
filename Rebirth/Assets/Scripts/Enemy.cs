@@ -45,7 +45,7 @@ namespace Assets.Scripts
         }
 
         // For AI Referenced 
-        http://answers.unity3d.com/questions/603634/having-issues-rotating-2d-sprites-to-face-another.html
+        //http://answers.unity3d.com/questions/603634/having-issues-rotating-2d-sprites-to-face-another.html
         void PursuitPlayer()
         {
 

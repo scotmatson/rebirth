@@ -1,24 +1,20 @@
 ﻿using UnityEngine;
 
-namespace Assets.Scripts
-{
-    public class Player : MonoBehaviour
-    {
+
+    public class Player : MonoBehaviour {
         public float PlayerMovementSpeed;
 
         private Animator _anim;
         private CharacterController _cont;
 
         // Use this for initialization
-        void Start ()
-        {
-            _anim = GetComponent<Animator>();
+        void Start () {
+            //_anim = GetComponent<Animator>();
             _cont = GetComponent<CharacterController>();
         }
 	
         // Update is called once per frame
         void Update () {
-
             var deltaX = Input.GetAxis( "Horizontal" ) * PlayerMovementSpeed;
             var deltaY = Input.GetAxis( "Vertical" ) * PlayerMovementSpeed;
 
@@ -27,4 +23,4 @@ namespace Assets.Scripts
             _cont.Move( newPosition * Time.deltaTime );
         }
     }
-}
+

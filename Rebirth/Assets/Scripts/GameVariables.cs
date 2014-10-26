@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public static class GameVariables : MonoBehaviour {
+public static class GameVariables {
 
-	public static float health = 1000;
+	//public static float health = 1000;
 }
