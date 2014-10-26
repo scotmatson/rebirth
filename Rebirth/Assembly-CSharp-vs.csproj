@@ -51,13 +51,13 @@
      <Compile Include="Assets\Scripts\EnemyScripts\Enemy.cs" />
      <Compile Include="Assets\Scripts\ExplodesWhenDestroyed.cs" />
      <Compile Include="Assets\Scripts\Explosion.cs" />
+     <Compile Include="Assets\Scripts\GUIScripts\PlayerHealth.cs" />
+     <Compile Include="Assets\Scripts\GUIScripts\ScreenFlash.cs" />
      <Compile Include="Assets\Scripts\InputFiresShot.cs" />
      <Compile Include="Assets\Scripts\InputMoveLR.cs" />
      <Compile Include="Assets\Scripts\ItemScripts\PotionHealth.cs" />
      <Compile Include="Assets\Scripts\PlayerScripts\Player.cs" />
-     <Compile Include="Assets\Scripts\PlayerScripts\PlayerHealth.cs" />
      <Compile Include="Assets\Scripts\PlayerScripts\PlayerState.cs" />
-     <Compile Include="Assets\Scripts\ScreenFlash.cs" />
      <Compile Include="Assets\Scripts\Shot.cs" />
      <Compile Include="Assets\Scripts\SpriteDamage.cs" />
   </ItemGroup>

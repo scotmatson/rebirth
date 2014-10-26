@@ -12,7 +12,7 @@ public class PlayerHealth : MonoBehaviour {
 		//continue to count down.
 		if (PlayerState.health > 0) {
 			guiText.text = "Health: " + PlayerState.health.ToString("f0");
-			PlayerState.health -= Time.deltaTime;
+			PlayerState.health -= Time.deltaTime * 2;
 		}
 	}
 }
