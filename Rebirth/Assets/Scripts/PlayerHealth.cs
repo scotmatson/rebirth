@@ -7,8 +7,8 @@ public class PlayerHealth : MonoBehaviour {
 	PlayerState player;
 
 	void start () {
-		GameObject playerObj = GameObject.FindWithTag ("Player");
-		PlayerState player = playerObj.GetComponent<PlayerState> ();
+		playerObj = GameObject.FindWithTag ("Player");
+		player = playerObj.GetComponent<PlayerState> ();
 	}
 	// Update is called once per frame
 	void Update () {
