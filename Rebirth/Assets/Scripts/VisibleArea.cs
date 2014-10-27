@@ -22,7 +22,7 @@ public class VisibleArea : MonoBehaviour {
 			if (kill) {
 				Enemy enemy = target.GetComponent<Enemy>();
 				enemy.isAlive = false;
-				yield return WaitForSeconds(1); //Pause 1 second so all enemies have a chance to die
+				yield return new WaitForSeconds(1); //Pause 1 second so all enemies have a chance to die
 				kill = false;
 			}
 		}
