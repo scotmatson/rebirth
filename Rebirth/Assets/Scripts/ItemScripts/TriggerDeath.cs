@@ -21,8 +21,7 @@ public class TriggerDeath : MonoBehaviour {
 
 	void OnTriggerEnter(Collider collider) {
 		if (collider.gameObject.CompareTag("Player")) {
-			Debug.Log("KILL EVERYTHING!!!!");
-			VisibleArea.kill = true;
+			VisibleArea.killTargets = true;
 			Destroy (this.gameObject);
 		}
 	}

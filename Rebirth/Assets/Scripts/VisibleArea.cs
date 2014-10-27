@@ -6,24 +6,21 @@ using System.Collections;
 
 public class VisibleArea : MonoBehaviour {
 
-	//GameObject[] enemies;
-	public static bool kill;
+	public static bool killTargets;
 
 	void Start () {
-
-		//enemies = GameObject.FindGameObjectsWithTag ("Enemy");
-		kill = false;
+		killTargets = false;
 	}
 	
 	IEnumerator OnTriggerStay(Collider collider) {
 		if (collider.tag == "Enemy") {
 			GameObject target = collider.gameObject;
 
-			if (kill) {
+			if (killTargets) {
 				Enemy enemy = target.GetComponent<Enemy>();
 				enemy.isAlive = false;
 				yield return new WaitForSeconds(1); //Pause 1 second so all enemies have a chance to die
-				kill = false;
+				killTargets = false;
 			}
 		}
 	}

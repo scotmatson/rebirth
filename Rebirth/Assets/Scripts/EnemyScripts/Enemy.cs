@@ -21,7 +21,8 @@
             _cont = GetComponent<CharacterController>();
             Speed = 3;
             RotationSpeed = 3;
-            PursuitDistance = 5;
+			//Can we set up separate puruit variables for x and y axis?
+            PursuitDistance = 15; //Enemies that exist just outside of the width of the viewport will pursue.
             InPursuit = false;
         }
 
