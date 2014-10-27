@@ -1,13 +1,13 @@
 ﻿using UnityEngine;
 
-namespace Assets.Scripts
-{
+
     public class Enemy : MonoBehaviour
     {
         public float Speed;
         public float RotationSpeed;
         public float PursuitDistance;
         public bool InPursuit;
+		public bool isAlive;
 
         private GameObject _playerTarget;
         private CharacterController _cont;
@@ -16,6 +16,7 @@ namespace Assets.Scripts
         // Use this for initialization
         void Start ()
         {
+			isAlive = true;
             _playerTarget = GameObject.FindGameObjectWithTag("Player");
             _cont = GetComponent<CharacterController>();
             Speed = 3;
@@ -28,6 +29,7 @@ namespace Assets.Scripts
         // Update is called once per frame
         void Update ()
         {
+			if (!isAlive) { Destroy (this.gameObject); }
             if (!InPursuit)
             {
                 InPursuit = ShouldPursuit();
@@ -71,4 +73,3 @@ namespace Assets.Scripts
             Debug.Log("Collision");
         }
     }
-}

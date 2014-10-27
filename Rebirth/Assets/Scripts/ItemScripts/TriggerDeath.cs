@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class DestroyEnemies : MonoBehaviour {
+public class TriggerDeath : MonoBehaviour {
 	//TODO Destroy all enemies within view. 
 	//Two ways to go about this.
 	//  1) Actually find viewport range and target all enemies within area.
@@ -17,5 +17,13 @@ public class DestroyEnemies : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
+	}
+
+	void OnTriggerEnter(Collider collider) {
+		if (collider.gameObject.CompareTag("Player")) {
+			Debug.Log("KILL EVERYTHING!!!!");
+			VisibleArea.kill = true;
+			Destroy (this.gameObject);
+		}
 	}
 }

@@ -58,11 +58,12 @@
      <Compile Include="Assets\Scripts\InputMoveLR.cs" />
      <Compile Include="Assets\Scripts\ItemScripts\AddHealth.cs" />
      <Compile Include="Assets\Scripts\ItemScripts\AddTreasure.cs" />
-     <Compile Include="Assets\Scripts\ItemScripts\DestroyEnemies.cs" />
+     <Compile Include="Assets\Scripts\ItemScripts\TriggerDeath.cs" />
      <Compile Include="Assets\Scripts\PlayerScripts\Player.cs" />
      <Compile Include="Assets\Scripts\PlayerScripts\PlayerState.cs" />
      <Compile Include="Assets\Scripts\Shot.cs" />
      <Compile Include="Assets\Scripts\SpriteDamage.cs" />
+     <Compile Include="Assets\Scripts\VisibleArea.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
