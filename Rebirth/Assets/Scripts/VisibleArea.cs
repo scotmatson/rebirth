@@ -15,14 +15,15 @@ public class VisibleArea : MonoBehaviour {
 		kill = false;
 	}
 	
-	void OnTriggerStay(Collider collider) {
+	IEnumerator OnTriggerStay(Collider collider) {
 		if (collider.tag == "Enemy") {
 			GameObject target = collider.gameObject;
 
 			if (kill) {
 				Enemy enemy = target.GetComponent<Enemy>();
 				enemy.isAlive = false;
-				//kill = false; If uncommented, this will flip back on too fast and only allow 1 enemy to die
+				yield return WaitForSeconds(1); //Pause 1 second so all enemies have a chance to die
+				kill = false;
 			}
 		}
 	}
