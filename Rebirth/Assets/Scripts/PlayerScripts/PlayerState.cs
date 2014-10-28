@@ -16,7 +16,16 @@ public class PlayerState : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (health <= 0) { isAlive = false; }
-		if (!isAlive) { Destroy (this.gameObject); }
+	    if (health <= 0)
+	    {
+	        isAlive = false;
+            Destroy(this.gameObject); 
+	    }
 	}
+
+    // I made this static since Health was static  above.
+    public static void DealDamage(float damage)
+    {
+        health -= damage;
+    }
 }

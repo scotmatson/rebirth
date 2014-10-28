@@ -4,10 +4,10 @@
     public class Enemy : MonoBehaviour
     {
         public float Speed;
-        public float RotationSpeed;
         public float PursuitDistance;
         public bool InPursuit;
 		public bool isAlive;
+        public float Damage; // Damage Enemy does to player
 
         private GameObject _playerTarget;
         private CharacterController _cont;
@@ -20,7 +20,7 @@
             _playerTarget = GameObject.FindGameObjectWithTag("Player");
             _cont = GetComponent<CharacterController>();
             Speed = 3;
-            RotationSpeed = 3;
+            Damage = 10f;
 			//Can we set up separate puruit variables for x and y axis?
             PursuitDistance = 15; //Enemies that exist just outside of the width of the viewport will pursue.
             InPursuit = false;
@@ -51,7 +51,6 @@
         //http://answers.unity3d.com/questions/603634/having-issues-rotating-2d-sprites-to-face-another.html
         void PursuitPlayer()
         {
-
             var newRotation = Quaternion.LookRotation(_playerTarget.transform.position - transform.position).eulerAngles;
             newRotation.z = 0;
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(newRotation), 1);
@@ -64,13 +63,17 @@
             _cont.Move(newPosition * Time.deltaTime);
         }
 
-
-        void OnCollisionEnter(Collision col)
+        void OnTriggerEnter(Collider other)
         {
-            if (col.gameObject.tag == "Player")
+            if (other.gameObject.tag == "Player")
             {
-                Debug.Log("Player");
+                //GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerState>().DealDamage(Damage);
+                
+                //If Health is left as static
+                PlayerState.DealDamage(Damage);
+                Destroy(this.gameObject);
             }
-            Debug.Log("Collision");
         }
+
+
     }
