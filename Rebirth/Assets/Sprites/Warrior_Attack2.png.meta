@@ -1,0 +1,179 @@
+fileFormatVersion: 2
+guid: 3e92833d785cc4a73b59f16a30f2549e
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Warrior_Attack2_0
+    21300002: Warrior_Attack2_1
+    21300004: Warrior_Attack2_2
+    21300006: Warrior_Attack2_3
+    21300008: Warrior_Attack2_4
+    21300010: Warrior_Attack2_5
+    21300012: Warrior_Attack2_6
+    21300014: Warrior_Attack2_7
+    21300016: Warrior_Attack2_8
+    21300018: Warrior_Attack2_9
+    21300020: Warrior_Attack2_10
+    21300022: Warrior_Attack2_11
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Warrior_Attack2_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 402
+        width: 79
+        height: 67
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Warrior_Attack2_1
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 384
+        width: 103
+        height: 76
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Warrior_Attack2_2
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 391
+        width: 99
+        height: 115
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Warrior_Attack2_3
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 297
+        width: 78
+        height: 75
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Warrior_Attack2_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 268
+        width: 83
+        height: 93
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Warrior_Attack2_5
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 256
+        width: 117
+        height: 102
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Warrior_Attack2_6
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 137
+        width: 67
+        height: 78
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Warrior_Attack2_7
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 150
+        width: 81
+        height: 94
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Warrior_Attack2_8
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 154
+        width: 113
+        height: 96
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Warrior_Attack2_9
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 6
+        width: 100
+        height: 112
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Warrior_Attack2_10
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 52
+        width: 94
+        height: 79
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Warrior_Attack2_11
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 42
+        width: 77
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
