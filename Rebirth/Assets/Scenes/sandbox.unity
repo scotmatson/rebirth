@@ -578,7 +578,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 367166110}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.415439606, y: -1.31518102, z: -3.41274643}
+  m_LocalPosition: {x: -.0135868071, y: -.338034123, z: 0}
   m_LocalScale: {x: .200000003, y: .200000003, z: 1}
   m_Children: []
   m_Father: {fileID: 1271566036}
@@ -1119,6 +1119,7 @@ GameObject:
   - 143: {fileID: 1271566039}
   - 54: {fileID: 1271566038}
   - 95: {fileID: 1271566040}
+  - 136: {fileID: 1271566041}
   m_Layer: 0
   m_Name: PlayerSprite
   m_TagString: Player
@@ -1146,7 +1147,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300158, guid: 26c7461e23024419e8c496f718809379, type: 3}
+  m_Sprite: {fileID: 21300062, guid: 26c7461e23024419e8c496f718809379, type: 3}
   m_Color: {r: .75686276, g: .75686276, b: .75686276, a: 1}
 --- !u!4 &1271566036
 Transform:
@@ -1155,7 +1156,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1271566034}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -16.9647655, y: -3.26119971, z: 3.41274643}
+  m_LocalPosition: {x: -16.9647655, y: -3.26119971, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children:
   - {fileID: 760863505}
@@ -1189,7 +1190,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 72
   m_CollisionDetection: 0
 --- !u!143 &1271566039
 CharacterController:
@@ -1198,8 +1199,8 @@ CharacterController:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1271566034}
   serializedVersion: 2
-  m_Height: .400000006
-  m_Radius: .100000001
+  m_Height: .349999994
+  m_Radius: .0900000036
   m_SlopeLimit: 45
   m_StepOffset: .300000012
   m_SkinWidth: .0799999982
@@ -1220,6 +1221,19 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!136 &1271566041
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1271566034}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: .100000001
+  m_Height: .400000006
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1389263279
 Prefab:
   m_ObjectHideFlags: 0
