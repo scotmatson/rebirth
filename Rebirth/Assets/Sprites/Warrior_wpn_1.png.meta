@@ -2,22 +2,32 @@ fileFormatVersion: 2
 guid: e6bc58d9cb44e47c9b8f861e7fde64b2
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Warrior_wpn_1_0
-    21300002: Warrior_wpn_1_1
-    21300004: Warrior_wpn_1_2
-    21300006: Warrior_wpn_1_3
-    21300008: Warrior_wpn_1_4
+    21300000: Warrior_wpn_1_00
+    21300002: Warrior_wpn_1_01
+    21300004: Warrior_wpn_1_02
+    21300006: Warrior_wpn_1_03
+    21300008: Warrior_wpn_1_04
     21300010: Warrior_wpn_1_5
-    21300012: Warrior_wpn_1_6
-    21300014: Warrior_wpn_1_7
-    21300016: Warrior_wpn_1_8
-    21300018: Warrior_wpn_1_9
-    21300020: Warrior_wpn_1_10
-    21300022: Warrior_wpn_1_11
-    21300024: Warrior_wpn_1_12
-    21300026: Warrior_wpn_1_13
-    21300028: Warrior_wpn_1_14
-    21300030: Warrior_wpn_1_15
+    21300012: Warrior_wpn_1_06
+    21300014: Warrior_wpn_1_07
+    21300016: Warrior_wpn_1_12
+    21300018: Warrior_wpn_1_08
+    21300020: Warrior_wpn_1_13
+    21300022: Warrior_wpn_1_09
+    21300024: Warrior_wpn_1_10
+    21300026: Warrior_wpn_1_15
+    21300028: Warrior_wpn_1_11
+    21300030: Warrior_wpn_1_14
+    21300032: Warrior_wpn_1_05
+    21300034: Warrior_wpn_1_0
+    21300036: Warrior_wpn_1_1
+    21300038: Warrior_wpn_1_2
+    21300040: Warrior_wpn_1_3
+    21300042: Warrior_wpn_1_4
+    21300044: Warrior_wpn_1_6
+    21300046: Warrior_wpn_1_7
+    21300048: Warrior_wpn_1_8
+    21300050: Warrior_wpn_1_9
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -62,162 +72,162 @@ TextureImporter:
     - name: Warrior_wpn_1_0
       rect:
         serializedVersion: 2
-        x: 22
-        y: 416
-        width: 94
-        height: 50
+        x: 0
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Warrior_wpn_1_1
       rect:
         serializedVersion: 2
-        x: 150
-        y: 418
-        width: 85
-        height: 94
+        x: 128
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Warrior_wpn_1_2
       rect:
         serializedVersion: 2
-        x: 278
-        y: 396
-        width: 109
-        height: 116
+        x: 256
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Warrior_wpn_1_3
       rect:
         serializedVersion: 2
-        x: 403
-        y: 385
-        width: 73
-        height: 83
+        x: 384
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Warrior_wpn_1_4
       rect:
         serializedVersion: 2
-        x: 30
-        y: 268
-        width: 50
-        height: 94
+        x: 0
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Warrior_wpn_1_5
       rect:
         serializedVersion: 2
-        x: 184
-        y: 274
-        width: 12
-        height: 16
+        x: 128
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Warrior_wpn_1_6
       rect:
         serializedVersion: 2
-        x: 277
-        y: 272
-        width: 108
-        height: 90
+        x: 256
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Warrior_wpn_1_7
       rect:
         serializedVersion: 2
-        x: 386
-        y: 292
-        width: 84
-        height: 74
+        x: 384
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Warrior_wpn_1_8
       rect:
         serializedVersion: 2
-        x: 22
-        y: 44
-        width: 94
-        height: 50
+        x: 0
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Warrior_wpn_1_9
       rect:
         serializedVersion: 2
-        x: 48
-        y: 150
-        width: 50
-        height: 94
+        x: 128
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Warrior_wpn_1_10
       rect:
         serializedVersion: 2
-        x: 150
-        y: 0
-        width: 92
-        height: 94
+        x: 256
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Warrior_wpn_1_11
       rect:
         serializedVersion: 2
-        x: 128
-        y: 150
-        width: 94
-        height: 84
+        x: 384
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Warrior_wpn_1_12
       rect:
         serializedVersion: 2
-        x: 256
-        y: 149
-        width: 116
-        height: 91
+        x: 0
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Warrior_wpn_1_13
       rect:
         serializedVersion: 2
-        x: 400
-        y: 39
-        width: 84
-        height: 88
+        x: 128
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Warrior_wpn_1_14
       rect:
         serializedVersion: 2
-        x: 425
-        y: 146
-        width: 85
-        height: 74
+        x: 256
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Warrior_wpn_1_15
       rect:
         serializedVersion: 2
-        x: 278
+        x: 384
         y: 0
-        width: 90
-        height: 106
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

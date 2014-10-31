@@ -4,7 +4,7 @@
     <Files>
       <File FileName="Assets\Scripts\VisibleArea.cs" Line="23" Column="5" />
       <File FileName="Assets\Scripts\ItemScripts\TriggerDeath.cs" Line="24" Column="27" />
-      <File FileName="Assets\Scripts\EnemyScripts\Enemy.cs" Line="24" Column="63" />
+      <File FileName="Assets\Scripts\EnemyScripts\Enemy.cs" Line="80" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
