@@ -1,10 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\EnemyScripts\Enemy.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlayerScripts\Player.cs">
     <Files>
-      <File FileName="Assets\Scripts\VisibleArea.cs" Line="23" Column="5" />
-      <File FileName="Assets\Scripts\ItemScripts\TriggerDeath.cs" Line="24" Column="27" />
-      <File FileName="Assets\Scripts\EnemyScripts\Enemy.cs" Line="80" Column="1" />
+      <File FileName="Assets\Scripts\PlayerScripts\Player.cs" Line="27" Column="1" />
+      <File FileName="Assets\Scripts\Imports\PlayerMove.cs" Line="45" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
