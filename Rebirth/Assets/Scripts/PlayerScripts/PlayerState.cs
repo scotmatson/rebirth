@@ -28,4 +28,9 @@ public class PlayerState : MonoBehaviour {
     {
         health -= damage;
     }
+
+    public static void KilledEnemyTreasure(float treasure)
+    {
+        treasure += treasure;
+    }
 }

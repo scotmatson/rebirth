@@ -4,7 +4,7 @@ using System.Collections;
 
 public class Shot : MonoBehaviour {
 
-	public float Speed = 3.0f;
+	public float Speed = 10.0f;
     public FacingDirection Direction;
     //public GameObject parent;
 

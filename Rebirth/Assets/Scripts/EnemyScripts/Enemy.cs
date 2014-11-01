@@ -60,12 +60,13 @@
 
             //Updating with .Move so that it obeys CharacterController Physics e.g dont go through walls
             var newPosition = transform.forward * Speed;
+            newPosition.z = 0;
             _cont.Move(newPosition * Time.deltaTime);
         }
 
         void OnTriggerEnter(Collider other)
         {
-            if (other.gameObject.tag == "Player")
+            if (other.tag == "Player" || other.gameObject.tag == "Player")
             {
                 //GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerState>().DealDamage(Damage);
                 
@@ -73,6 +74,14 @@
                 PlayerState.DealDamage(Damage);
                 Destroy(this.gameObject);
             }
+
+            if (other.gameObject.tag == "Bullet" ||other.tag == "Bullet" || other.name == "Bullet(Clone)")
+            {
+                //Gives Player Treasure for killing enemy with axe
+                PlayerState.KilledEnemyTreasure(10f);
+                Destroy(this.gameObject);
+            }
+
         }
 
 
