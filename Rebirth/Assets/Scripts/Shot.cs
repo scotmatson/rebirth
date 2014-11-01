@@ -7,7 +7,7 @@ public class Shot : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-		rigidbody2D.velocity = new Vector2(0.0f, speed);
-
+		//rigidbody2D.velocity = new Vector2(0.0f, speed);
+        this.rigidbody.velocity = new Vector3(0f,speed,0);
 	}
 }
