@@ -1147,8 +1147,8 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300062, guid: 26c7461e23024419e8c496f718809379, type: 3}
-  m_Color: {r: .75686276, g: .75686276, b: .75686276, a: 1}
+  m_Sprite: {fileID: 21300016, guid: db582f1e8cdc44ab1a23aa2924527fb8, type: 3}
+  m_Color: {r: .450980395, g: .450980395, b: .450980395, a: 1}
 --- !u!4 &1271566036
 Transform:
   m_ObjectHideFlags: 0
@@ -1177,6 +1177,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerMovementSpeed: 3
+  Direction: 0
+  ShootableGameObject: {fileID: 100000, guid: e7ee0db493c6fda47b4c79549cb0ccf7, type: 2}
 --- !u!54 &1271566038
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1215,7 +1217,7 @@ Animator:
   m_GameObject: {fileID: 1271566034}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2e665926bb7c0204db3239eb5b887072, type: 2}
+  m_Controller: {fileID: 9100000, guid: 093d090f476c54acf841491cc613c4b9, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
