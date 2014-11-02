@@ -52,7 +52,7 @@
         void PursuitPlayer()
         {
             var newRotation = Quaternion.LookRotation(_playerTarget.transform.position - transform.position).eulerAngles;
-            newRotation.z = 0;
+			newRotation.x = 270;
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(newRotation), 1);
 
             //If we want to move with updating pos
@@ -60,11 +60,12 @@
 
             //Updating with .Move so that it obeys CharacterController Physics e.g dont go through walls
             var newPosition = transform.forward * Speed;
-            newPosition.z = 0;
+			newPosition.x = 270;
             _cont.Move(newPosition * Time.deltaTime);
         }
 
-        void OnTriggerEnter(Collider other)
+		//Changed to continuously deal damage and not kill the enemy
+        void OnTriggerStay(Collider other)
         {
             if (other.tag == "Player" || other.gameObject.tag == "Player")
             {
@@ -72,12 +73,13 @@
                 
                 //If Health is left as static
                 PlayerState.DealDamage(Damage);
-                Destroy(this.gameObject);
+                //Destroy(this.gameObject);
             }
 
             if (other.gameObject.tag == "Bullet" ||other.tag == "Bullet" || other.name == "Bullet(Clone)")
             {
                 //Gives Player Treasure for killing enemy with axe
+				GetComponent<AudioSource> ().Play ();
                 PlayerState.KilledEnemyTreasure(10f);
                 Destroy(this.gameObject);
             }
