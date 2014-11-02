@@ -29,7 +29,7 @@ public class Player : MonoBehaviour {
 
 		var deltaX = Input.GetAxis( "Horizontal" ) * PlayerMovementSpeed;
 		var deltaY = Input.GetAxis( "Vertical" ) * PlayerMovementSpeed;
-		var newPosition = new Vector3(deltaX, deltaY, 0);
+		var newPosition = new Vector3(deltaX, 0, deltaY);
 
         //Move the Player using Character Controller Move to obey basic collsion
         _cont.Move(newPosition * Time.deltaTime);
