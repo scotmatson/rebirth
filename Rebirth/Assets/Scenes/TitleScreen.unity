@@ -86,6 +86,7 @@ GameObject:
   - 92: {fileID: 1038671927}
   - 124: {fileID: 1038671926}
   - 81: {fileID: 1038671925}
+  - 114: {fileID: 1038671930}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -158,6 +159,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &1038671930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1038671924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1f2225c5c116bb40ad907fc2c115372, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doWindow0: 1
+  x: 50
+  y: 50
+  w: 50
+  h: 50
+  mySkin: {fileID: 11400000, guid: 7953503d9e83f8d469b84619849edd4e, type: 2}
+  windowRect0:
+    serializedVersion: 2
+    x: 118
+    y: 18
+    width: 750
+    height: 510
 --- !u!1 &1327882662
 GameObject:
   m_ObjectHideFlags: 0
@@ -231,7 +255,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1545701078}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 28.1395645, y: .865709662, z: 15.9286766}
+  m_LocalPosition: {x: 27.9321804, y: 1.53131104, z: 8.97185421}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1327882664}
