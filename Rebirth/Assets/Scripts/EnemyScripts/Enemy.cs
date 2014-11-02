@@ -1,7 +1,9 @@
-﻿using UnityEngine;
+﻿using System.Diagnostics;
+using UnityEngine;
+using Debug = UnityEngine.Debug;
 
 
-    public class Enemy : MonoBehaviour
+public class Enemy : MonoBehaviour
     {
         public float Speed;
         public float PursuitDistance;
@@ -51,16 +53,15 @@
         //http://answers.unity3d.com/questions/603634/having-issues-rotating-2d-sprites-to-face-another.html
         void PursuitPlayer()
         {
+            
             var newRotation = Quaternion.LookRotation(_playerTarget.transform.position - transform.position).eulerAngles;
-			newRotation.x = 270;
+			//for some reason this stil needs to be locked on the z
+            newRotation.z = 0;
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(newRotation), 1);
-
-            //If we want to move with updating pos
-            //transform.position += transform.forward * speed * Time.deltaTime;
 
             //Updating with .Move so that it obeys CharacterController Physics e.g dont go through walls
             var newPosition = transform.forward * Speed;
-			newPosition.x = 270;
+			newPosition.y =  0f;
             _cont.Move(newPosition * Time.deltaTime);
         }
 
@@ -73,13 +74,13 @@
                 
                 //If Health is left as static
                 PlayerState.DealDamage(Damage);
-                //Destroy(this.gameObject);
+                Destroy(this.gameObject);
             }
 
             if (other.gameObject.tag == "Bullet" ||other.tag == "Bullet" || other.name == "Bullet(Clone)")
             {
                 //Gives Player Treasure for killing enemy with axe
-				GetComponent<AudioSource> ().Play ();
+				//GetComponent<AudioSource> ().Play ();
                 PlayerState.KilledEnemyTreasure(10f);
                 Destroy(this.gameObject);
             }

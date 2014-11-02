@@ -66,10 +66,10 @@ public class Player : MonoBehaviour {
                 spawnPosition.x -= offset;
                 break;
             case FacingDirection.UP:
-                spawnPosition.y += offset;
+                spawnPosition.z += offset;
                 break;
             case FacingDirection.DOWN:
-                spawnPosition.y -= offset;
+                spawnPosition.z -= offset;
                 break;
         }
 

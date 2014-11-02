@@ -30,10 +30,10 @@ public class Shot : MonoBehaviour {
 	            newPos.x -= Speed * Time.deltaTime;
 	            break;
 	        case FacingDirection.UP:
-	            newPos.y += Speed * Time.deltaTime;
+	            newPos.z += Speed * Time.deltaTime;
 	            break;
 	        case FacingDirection.DOWN:
-	            newPos.y -= Speed * Time.deltaTime;
+	            newPos.z -= Speed * Time.deltaTime;
 	            break;
 	    }
 
