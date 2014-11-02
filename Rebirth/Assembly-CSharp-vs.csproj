@@ -49,6 +49,7 @@
      <Compile Include="Assets\Scripts\Destroyable.cs" />
      <Compile Include="Assets\Scripts\EatBullets.cs" />
      <Compile Include="Assets\Scripts\EnemyScripts\Enemy.cs" />
+     <Compile Include="Assets\Scripts\Environmental\Audio.cs" />
      <Compile Include="Assets\Scripts\Environmental\CameraMove.cs" />
      <Compile Include="Assets\Scripts\Environmental\VisibleArea.cs" />
      <Compile Include="Assets\Scripts\ExplodesWhenDestroyed.cs" />

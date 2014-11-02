@@ -50,6 +50,7 @@ public class Player : MonoBehaviour {
 	void Attack ()
 	{
 	    var attacking = Input.GetKeyDown(KeyCode.Mouse0);
+
 	    _anim.SetBool("attacking", attacking);
 
 	    var offset = 1;
@@ -75,7 +76,9 @@ public class Player : MonoBehaviour {
 
 	    if (attacking)
 	    {
-            Instantiate(ShootableGameObject, spawnPosition, transform.rotation);  
+            Instantiate(ShootableGameObject, spawnPosition, transform.rotation);
+			GetComponent<AudioSource> ().Play ();
+
 	    }
 	}
 
