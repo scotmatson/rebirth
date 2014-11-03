@@ -68,7 +68,6 @@
      <Compile Include="Assets\Scripts\PlayerScripts\PlayerState.cs" />
      <Compile Include="Assets\Scripts\Shot.cs" />
      <Compile Include="Assets\Scripts\SpriteDamage.cs" />
-     <Compile Include="Assets\Scripts\TitleScreen\TitleScreen.cs" />
      <None Include="Assets\Necromancer GUI\Kingthings.txt" />
      <None Include="Assets\Necromancer GUI\Readme.txt" />
   </ItemGroup>
