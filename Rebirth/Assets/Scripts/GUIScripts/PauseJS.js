@@ -3,12 +3,14 @@
 //Variables
 var GamePaused = false;
 var mySkin : GUISkin;
+var gameMusic : GameObject;
 
 //The Postion of the Pause Screen
 var pauseWindowRect = Rect (350,10, 350, 510);
 
 
-//Done by from Asset COlleciton
+
+//Done by from Asset Colleciton
 private var spikeCount;
 function AddSpikes(winX)
 {
@@ -37,6 +39,7 @@ function PauseMenu (windowID : int)
 		{
 			GamePaused = false;
 			Time.timeScale = 1;
+			gameMusic.audio.Play();
 		}
 		
 		if (GUILayout.Button("Restart Level"))
@@ -59,6 +62,7 @@ function PauseMenu (windowID : int)
 
 function Start() {
 	GamePaused = false;
+	gameMusic = GameObject.Find("Main Camera");
 }
 
 function Update() {
@@ -70,6 +74,7 @@ function Update() {
 	
 	if (GamePaused) {
 		//Stops the Updates
+		gameMusic.audio.Pause();
 		Time.timeScale = 0;
 	}
 	
