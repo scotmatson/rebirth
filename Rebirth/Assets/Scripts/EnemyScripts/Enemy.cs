@@ -21,7 +21,7 @@ public class Enemy : MonoBehaviour
 			isAlive = true;
             _playerTarget = GameObject.FindGameObjectWithTag("Player");
             _cont = GetComponent<CharacterController>();
-            Speed = 3;
+            Speed = 2;
             Damage = 10f;
 			//Can we set up separate puruit variables for x and y axis?
             PursuitDistance = 15; //Enemies that exist just outside of the width of the viewport will pursue.
