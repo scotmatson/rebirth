@@ -74,7 +74,6 @@ public class Enemy : MonoBehaviour
                 
                 //If Health is left as static
                 PlayerState.DealDamage(Damage);
-                Destroy(this.gameObject);
             }
 
             //Dont try this at home. For some reason it doesnt like the tag...

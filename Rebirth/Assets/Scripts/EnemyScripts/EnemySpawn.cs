@@ -15,14 +15,22 @@ public class EnemySpawn : MonoBehaviour
 	
 	}
 	
-	// Update is called once per frame
-	void Update () {
 
-	    if (Time.time > _nextSpawn)
-	    {
+    //When the bound box is with in distance
+    void OnTriggerStay(Collider col)
+    {
+        //Destroys Axe if it hits anything other than Player and Enemy
+        //The Axe gets destroyed by Enemy in Enemy script for other reasons
+        if (col.name == "Bounded View")
+        {
+            if (Time.time > _nextSpawn)
+	        {
             //Spawns New Enemy based on Frequency
 	        _nextSpawn = Time.time + Frequency;
 	        Instantiate(SpawnedObject, transform.position, Quaternion.identity);
-	    }
-	}
+	       }
+        }
+
+    }
+
 }
