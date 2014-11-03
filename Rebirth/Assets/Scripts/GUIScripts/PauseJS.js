@@ -45,12 +45,16 @@ function PauseMenu (windowID : int)
 		if (GUILayout.Button("Restart Level"))
 		{
 			//Sets the Scene to Current Level Index
+			GamePaused = false;
+			Time.timeScale = 1;
 			RestartLevel();
 		}
 		
 		if (GUILayout.Button("Main Menu"))
 		{
 			//Go to the Main Menu
+			GamePaused = false;
+			Time.timeScale = 1;
 			MainMenu();
 		}
 
