@@ -37,24 +37,21 @@ function PauseMenu (windowID : int)
 		
 		if (GUILayout.Button("Unpause"))
 		{
-			GamePaused = false;
-			Time.timeScale = 1;
+			UnPause();
 			gameMusic.audio.Play();
 		}
 		
 		if (GUILayout.Button("Restart Level"))
 		{
+			UnPause();
 			//Sets the Scene to Current Level Index
-			GamePaused = false;
-			Time.timeScale = 1;
 			RestartLevel();
 		}
 		
 		if (GUILayout.Button("Main Menu"))
 		{
+			UnPause();
 			//Go to the Main Menu
-			GamePaused = false;
-			Time.timeScale = 1;
 			MainMenu();
 		}
 
@@ -79,7 +76,7 @@ function Update() {
 	if (GamePaused) {
 		//Stops the Updates
 		gameMusic.audio.Pause();
-		Time.timeScale = 0;
+		PauseGame();
 	}
 	
 }
@@ -95,6 +92,21 @@ var MainMenu = function() {
 	Application.LoadLevel(0);
 };
 
+var PauseGame = function() {
+
+	//Sets Time Scale preventing Update Frame from being caleld making it seem like its paused
+	Time.timeScale = 0;	
+	//Toggle IsPaused On Player
+	GameObject.FindGameObjectWithTag("Player").GetComponent("Player").IsPaused = true;
+};
+
+var UnPause = function() {
+	GamePaused = false;
+	Time.timeScale = 1;
+	
+	//Toggle ISPause on Player
+	GameObject.FindGameObjectWithTag("Player").GetComponent("Player").IsPaused = false;
+};
 
 function OnGUI ()
 {

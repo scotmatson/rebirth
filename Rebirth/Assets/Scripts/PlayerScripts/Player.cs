@@ -6,10 +6,13 @@ public class Player : MonoBehaviour {
 
 
     public float PlayerMovementSpeed;
-    private Animator _anim;
-    private CharacterController _cont;
     public  FacingDirection Direction;
     public GameObject ShootableGameObject;
+    public float ThrowingFrequency;
+    public bool IsPaused;
+    private Animator _anim;
+    private CharacterController _cont;
+    private float _nextThrow ;
 
     // Use this for initialization
     void Start () {
@@ -17,6 +20,7 @@ public class Player : MonoBehaviour {
     	_anim = GetComponent<Animator>();
         _cont = GetComponent<CharacterController>();
         Direction = FacingDirection.RIGHT;
+        IsPaused = false;
     }
 	
     // Update is called once per frame
@@ -49,7 +53,8 @@ public class Player : MonoBehaviour {
 
 	void Attack ()
 	{
-	    var attacking = Input.GetKeyDown(KeyCode.Mouse0) || Input.GetKeyDown(KeyCode.Space);
+
+	    var attacking = (Input.GetKeyDown(KeyCode.Mouse0) || Input.GetKeyDown(KeyCode.Space)) && (Time.time > _nextThrow) && !IsPaused  ;
 
 	    _anim.SetBool("attacking", attacking);
 
@@ -76,9 +81,11 @@ public class Player : MonoBehaviour {
 
 	    if (attacking)
 	    {
+            //Next Time Available to throw
+	        _nextThrow = Time.time + ThrowingFrequency;
+
             Instantiate(ShootableGameObject, spawnPosition, transform.rotation);
 			GetComponent<AudioSource> ().Play ();
-
 	    }
 	}
 
@@ -106,6 +113,4 @@ public class Player : MonoBehaviour {
             Direction = FacingDirection.DOWN;
         }
     }
-
-
 }
