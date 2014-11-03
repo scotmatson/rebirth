@@ -77,12 +77,18 @@ public class Enemy : MonoBehaviour
                 Destroy(this.gameObject);
             }
 
+            //Dont try this at home. For some reason it doesnt like the tag...
             if (other.gameObject.tag == "Bullet" ||other.tag == "Bullet" || other.name == "Bullet(Clone)")
             {
                 //Gives Player Treasure for killing enemy with axe
 				//GetComponent<AudioSource> ().Play ();
                 PlayerState.KilledEnemyTreasure(10f);
+                
+                //Destroy the Enemy
                 Destroy(this.gameObject);
+
+                //Destroy the Bullet this solves an issue with collisions
+                Destroy(other.gameObject);
             }
 
         }

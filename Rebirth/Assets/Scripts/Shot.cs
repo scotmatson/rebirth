@@ -18,7 +18,6 @@ public class Shot : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-
         var newPos = this.transform.position;
 
 	    switch (Direction)
@@ -36,8 +35,18 @@ public class Shot : MonoBehaviour {
 	            newPos.z -= Speed * Time.deltaTime;
 	            break;
 	    }
-
-
         this.transform.position = newPos;
 	}
+
+    
+    void OnTriggerEnter(Collider col)
+    {
+        //Destroys Axe if it hits anything other than Player and Enemy
+        //The Axe gets destroyed by Enemy in Enemy script for other reasons
+        if (col.tag != "Player" && col.tag != "Enemy")
+        {
+             Destroy(this.gameObject);
+        }
+       
+    }
 }

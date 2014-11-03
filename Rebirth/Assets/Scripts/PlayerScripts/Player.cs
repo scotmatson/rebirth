@@ -49,14 +49,14 @@ public class Player : MonoBehaviour {
 
 	void Attack ()
 	{
-	    var attacking = Input.GetKeyDown(KeyCode.Mouse0);
+	    var attacking = Input.GetKeyDown(KeyCode.Mouse0) || Input.GetKeyDown(KeyCode.Space);
 
 	    _anim.SetBool("attacking", attacking);
 
-	    var offset = 1;
+	    const int offset = 1;
+	    var spawnPosition = transform.position;
 
-	    Vector3 spawnPosition = transform.position;
-
+        //These offsets stop the Axe from getting stuck wiht player collider
         switch (Direction)
         {
             case FacingDirection.RIGHT:
