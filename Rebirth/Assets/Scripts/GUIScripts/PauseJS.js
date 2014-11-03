@@ -4,6 +4,8 @@
 var GamePaused = false;
 var mySkin : GUISkin;
 var gameMusic : GameObject;
+var ravenCaw : GameObject;
+var playerAxe : GameObject;
 
 //The Postion of the Pause Screen
 var pauseWindowRect = Rect (350,10, 350, 510);
@@ -39,6 +41,8 @@ function PauseMenu (windowID : int)
 		{
 			UnPause();
 			gameMusic.audio.Play();
+			ravenCaw.audio.Play();
+			playerAxe.audio.Play();
 		}
 		
 		if (GUILayout.Button("Restart Level"))
@@ -64,6 +68,8 @@ function PauseMenu (windowID : int)
 function Start() {
 	GamePaused = false;
 	gameMusic = GameObject.Find("Main Camera");
+	ravenCaw = GameObject.Find("Raven");
+	playerAxe = GameObject.Find("PlayerSprite");
 }
 
 function Update() {
@@ -76,6 +82,10 @@ function Update() {
 	if (GamePaused) {
 		//Stops the Updates
 		gameMusic.audio.Pause();
+
+		ravenCaw.audio.Pause();
+		playerAxe.audio.Pause();
+
 		PauseGame();
 	}
 	
