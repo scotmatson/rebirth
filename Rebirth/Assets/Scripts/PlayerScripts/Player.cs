@@ -21,6 +21,7 @@ public class Player : MonoBehaviour {
         _cont = GetComponent<CharacterController>();
         Direction = FacingDirection.RIGHT;
         IsPaused = false;
+		ThrowingFrequency = 0.5f;
     }
 	
     // Update is called once per frame
