@@ -9,7 +9,7 @@ public class PlayerState : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		health = 1000F;
+		health = 100F;
 		treasure = 0F;
 		isAlive = true;
 	}
@@ -33,4 +33,15 @@ public class PlayerState : MonoBehaviour {
     {
         treasure += treasure;
     }
+
+    public static float GetHealth()
+    {
+        return PlayerState.health;
+    }
+
+    public static float GetTreasure()
+    {
+        return treasure;
+    }
+
 }
