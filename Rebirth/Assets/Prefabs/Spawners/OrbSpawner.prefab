@@ -52,7 +52,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4931495dd9342944bbf13e344bdc0e9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpawnedObject: {fileID: 100000, guid: 4d3f2b0a46efd76499fc35aa0a7679d5, type: 2}
+  SpawnedObject: {fileID: 100002, guid: 0c3fc49f492763a49b2f74ee354ec8c2, type: 2}
   Frequency: 5
 --- !u!1001 &100100000
 Prefab:

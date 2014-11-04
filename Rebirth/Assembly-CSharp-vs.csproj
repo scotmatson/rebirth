@@ -70,6 +70,7 @@
      <Compile Include="Assets\Scripts\Shot.cs" />
      <Compile Include="Assets\Scripts\SpriteDamage.cs" />
      <None Include="Assets\Necromancer GUI\Kingthings.txt" />
+     <None Include="Assets\KY_magicEffectsFree\ReadMe.txt" />
      <None Include="Assets\Necromancer GUI\Readme.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
