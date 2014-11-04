@@ -7,8 +7,8 @@ var gameMusic : GameObject;
 var ravenCaw : GameObject;
 var playerAxe : GameObject;
 
-//The Postion of the Pause Screen
-var pauseWindowRect = Rect (350,10, 350, 510);
+//The Rectangle Representing where the menu is 
+var pauseWindowRect : Rect;
 
 
 
@@ -70,6 +70,16 @@ function Start() {
 	gameMusic = GameObject.Find("Main Camera");
 	ravenCaw = GameObject.Find("Raven");
 	playerAxe = GameObject.Find("PlayerSprite");
+	
+	
+	//Draw the rectangle
+	var width = 350;
+	var height = 500;
+	
+	var x = (Screen.width / 2 ) - (width / 2);
+	var y = (Screen.height / 2 ) - (height / 2);
+	pauseWindowRect = Rect (x,y, width, height);
+	
 }
 
 function Update() {
