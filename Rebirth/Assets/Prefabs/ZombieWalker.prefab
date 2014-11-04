@@ -74,7 +74,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 36
   m_CollisionDetection: 0
 --- !u!95 &9500000
 Animator:
