@@ -177,7 +177,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 72
+  m_Constraints: 54
   m_CollisionDetection: 0
 --- !u!65 &6500000
 BoxCollider:
@@ -280,6 +280,8 @@ MonoBehaviour:
   PlayerMovementSpeed: 6
   Direction: 0
   ShootableGameObject: {fileID: 100000, guid: e7ee0db493c6fda47b4c79549cb0ccf7, type: 2}
+  ThrowingFrequency: 0
+  IsPaused: 0
 --- !u!124 &12400000
 Behaviour:
   m_ObjectHideFlags: 1
