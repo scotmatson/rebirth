@@ -7,12 +7,15 @@
 
 
 //The level to select
-var selectedLevel;
+var selectedLevel : int;
+var mainWindowRect : Rect;
+
 
 //Done by from Asset COlleciton
 private var spikeCount;
 var mySkin : GUISkin;
-var mainWindowRect = Rect (118, 18, 750, 510);
+
+
 /*
 	This function is from the assets 
 */
@@ -57,8 +60,8 @@ function MainMenu (windowID : int)
 		
 		//This stuff is for the Levels
 		//Fixed Width and Height and Y Axis so there are 3 level with eachother
-		var pos = mainWindowRect;
-		pos.y += 300;
+		var pos : Rect;
+		pos.y = 300;
 		pos.width = 200;
 		pos.height = 50;
 		
@@ -83,6 +86,16 @@ function MainMenu (windowID : int)
 			selectedLevel =3;
 		}
 		
+		
+		//Quit Game
+		
+		var quitPos = Rect(175,375,400,75);
+		
+		if ( GUI.Button(quitPos,"Exit",mySkin.FindStyle("Button")) )
+		{
+			Application.Quit();
+		}
+		
 		//Start States the game
 		if (play) 
 		{
@@ -95,8 +108,19 @@ var PlayGame = function (selected) {
 
 	//If No Levl was selected default to 1
 	selected = selected || 1;
-	Application.LoadLevel(1);
+	Application.LoadLevel( selectedLevel );
 };
+
+function Start() {
+
+	var width = 750;
+	var height = 510;
+	var x = (Screen.width / 2) - (width /2 );
+	var y = (Screen.height / 2) - (height / 2);
+	mainWindowRect = Rect (x,y,width,height);
+	
+	selectedLevel = 1;
+}
 
 function OnGUI ()
 {
