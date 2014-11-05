@@ -161,11 +161,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70a878fc6b084ab499cf99e1b4083004, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 0
-  PursuitDistance: 0
-  InPursuit: 0
-  isAlive: 0
+  AtackFreq: 0
   Damage: 0
+  InPursuit: 0
+  PursuitDistance: 0
+  Speed: 0
+  TouchingPlayer: 0
+  isAlive: 0
+  zombieIsHit: {fileID: 0}
+  Health: 1
 --- !u!135 &13500000
 SphereCollider:
   m_ObjectHideFlags: 1
