@@ -18,7 +18,10 @@ public class AddHealth : MonoBehaviour {
 
 	void OnTriggerEnter(Collider collider) {
 		if (collider.gameObject.CompareTag("Player")) {
-			PlayerState.health += increase;
+
+            var playerState = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerState>();
+
+			playerState.health += increase;
 			Object.Destroy (this.gameObject);
 		}
 	}

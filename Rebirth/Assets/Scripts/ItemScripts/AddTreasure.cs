@@ -17,7 +17,9 @@ public class AddTreasure : MonoBehaviour {
 
 	void OnTriggerEnter(Collider collider) {
 		if (collider.gameObject.CompareTag("Player")) {
-			PlayerState.treasure += increase;
+            var playerState = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerState>();
+
+			playerState.treasure += increase;
 			Object.Destroy (this.gameObject);
 		}
 	}

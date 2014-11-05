@@ -9,11 +9,12 @@ public class Enemy : MonoBehaviour
         public float PursuitDistance;
         public bool InPursuit;
 		public bool isAlive;
-        public float Damage; // Damage Enemy does to player
+        public float Damage; // Damage Enemy does to playe
+        public float AtackFreq;
 
         private GameObject _playerTarget;
         private CharacterController _cont;
-
+        private float _nextAttack;
 
         // Use this for initialization
         void Start ()
@@ -26,6 +27,11 @@ public class Enemy : MonoBehaviour
 			//Can we set up separate puruit variables for x and y axis?
             PursuitDistance = 15; //Enemies that exist just outside of the width of the viewport will pursue.
             InPursuit = false;
+
+            //Freqeuency in which enemy does damage to the player
+            AtackFreq = 2f; //Eveery 2s
+            _nextAttack = 0f;
+
         }
 
        
@@ -68,12 +74,17 @@ public class Enemy : MonoBehaviour
 		//Changed to continuously deal damage and not kill the enemy
         void OnTriggerStay(Collider other)
         {
+            var playerState = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerState>();
+
             if (other.tag == "Player" || other.gameObject.tag == "Player")
             {
                 //GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerState>().DealDamage(Damage);
-                
-                //If Health is left as static
-                PlayerState.DealDamage(Damage);
+
+                if (Time.time > _nextAttack)
+                {
+                    _nextAttack = Time.time + AtackFreq;
+                    playerState.DealDamage(Damage);
+                }
             }
 
             //Dont try this at home. For some reason it doesnt like the tag...
@@ -81,7 +92,7 @@ public class Enemy : MonoBehaviour
             {
                 //Gives Player Treasure for killing enemy with axe
 				//GetComponent<AudioSource> ().Play ();
-                PlayerState.KilledEnemyTreasure(10f);
+                playerState.KilledEnemyTreasure(10f);
                 
                 //Destroy the Enemy
                 Destroy(this.gameObject);

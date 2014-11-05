@@ -3,8 +3,8 @@ using System.Collections;
 
 public class PlayerState : MonoBehaviour {
 
-	public static float health;
-	public static float treasure;
+	public  float health;
+	public  float treasure;
 	public bool isAlive;
 
 	// Use this for initialization
@@ -19,27 +19,31 @@ public class PlayerState : MonoBehaviour {
 	    if (health <= 0)
 	    {
 	        isAlive = false;
-            Destroy(this.gameObject); 
+           // Destroy(this.gameObject); 
+	        GameObject.FindGameObjectWithTag("Player").GetComponent<GamePlayUI>().IsDead = true;
 	    }
 	}
 
     // I made this static since Health was static  above.
-    public static void DealDamage(float damage)
+    public  void DealDamage(float damage)
     {
+        Debug.Log("Health before: " + health);
         health -= damage;
+        Debug.Log("Health after: " + health);
     }
 
-    public static void KilledEnemyTreasure(float treasure)
+
+    public  void KilledEnemyTreasure(float treasure)
     {
         treasure += treasure;
     }
 
-    public static float GetHealth()
+    public  float GetHealth()
     {
-        return PlayerState.health;
+        return health;
     }
 
-    public static float GetTreasure()
+    public  float GetTreasure()
     {
         return treasure;
     }
