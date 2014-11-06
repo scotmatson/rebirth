@@ -108,10 +108,10 @@ MonoBehaviour:
       m_Top: 2
       m_Bottom: 2
     m_Padding:
-      m_Left: 18
+      m_Left: 15
       m_Right: 20
-      m_Top: 3
-      m_Bottom: 6
+      m_Top: 16
+      m_Bottom: 23
     m_Overflow:
       m_Left: 0
       m_Right: 0
@@ -123,9 +123,9 @@ MonoBehaviour:
     m_Alignment: 4
     m_WordWrap: 0
     m_RichText: 1
-    m_TextClipping: 1
+    m_TextClipping: 0
     m_ImagePosition: 0
-    m_ContentOffset: {x: 0, y: 0}
+    m_ContentOffset: {x: 0, y: -2.54999995}
     m_FixedWidth: 0
     m_FixedHeight: 0
     m_StretchWidth: 1
@@ -226,9 +226,9 @@ MonoBehaviour:
       m_Top: 2
       m_Bottom: 2
     m_Padding:
-      m_Left: 30
+      m_Left: 26
       m_Right: 32
-      m_Top: 3
+      m_Top: 5
       m_Bottom: 12
     m_Overflow:
       m_Left: 0
