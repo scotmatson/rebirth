@@ -14,8 +14,7 @@ public class Enemy : MonoBehaviour
     public bool isAlive;
     public AudioSource zombieIsHit;
     public int Health;
-
-
+	
     // Use this for initialization
     private void Start()
     {
@@ -70,7 +69,7 @@ public class Enemy : MonoBehaviour
         transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(newRotation), 1);
 
         //Updating with .Move so that it obeys CharacterController Physics e.g dont go through walls
-        Vector3 newPosition = transform.forward*Speed;
+        Vector3 newPosition = transform.forward * Speed;
         _cont.Move(newPosition*Time.deltaTime);
     }
 
@@ -109,15 +108,27 @@ public class Enemy : MonoBehaviour
             {
                 AudioSource.PlayClipAtPoint(zombieIsHit.clip, Camera.main.transform.position);
             }
+			//Shell for Demon script
+			if (gameObject.name == "Demon")
+			{
+
+			}
             Debug.Log("Health Before : " + Health);
             //Lose one health
             Health--;
             Debug.Log("Health After : " + Health);
             if (Health <= 0)
             {
-                //Destroy the Enemy
-                Destroy(gameObject);
-                playerState.KilledEnemyTreasure(10f);
+				if (gameObject.name == "Demon")
+				{
+					//End the game
+				}
+				else
+				{
+					//Destroy the Enemy
+                	Destroy(gameObject);
+                	playerState.KilledEnemyTreasure(10f);
+				}
             }
            
 
