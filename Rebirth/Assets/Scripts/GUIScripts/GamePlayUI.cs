@@ -5,15 +5,18 @@ public class GamePlayUI : MonoBehaviour {
 
     public bool GamePaused;
     public bool IsDead;
+    public GUIStyle hudStyle;
 
     public GUISkin guiSkin;
 
     private Rect _pauseMenuRect;
     private Rect _gameOverRect;
+    public Rect _hudDisplay;
+    
+    
     private GameObject _gameMusic;
     private GameObject _ravenCaw;
     private GameObject _playerAxe;
-
 
     private float _width;
     private float _height;
@@ -58,7 +61,10 @@ public class GamePlayUI : MonoBehaviour {
 
         //Audio
         _gameMusic.audio.Pause();
-        _ravenCaw.audio.Pause();
+        if (_ravenCaw != null)
+        {
+            _ravenCaw.audio.Pause();
+        }
         _playerAxe.audio.Pause();
 
         GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().IsPaused = true;
@@ -70,7 +76,11 @@ public class GamePlayUI : MonoBehaviour {
         Time.timeScale = 1;
 
         _gameMusic.audio.Play();
-        _ravenCaw.audio.Play();
+        if (_ravenCaw != null)
+        {
+            _ravenCaw.audio.Play(); 
+        }
+        
         _playerAxe.audio.Play();
 
         GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().IsPaused = false;
@@ -106,6 +116,13 @@ public class GamePlayUI : MonoBehaviour {
         _pauseMenuRect = new Rect(x,y,_width,_height);
         _gameOverRect = new Rect(x,y,_width,_height);
 
+
+	    var hud_x = 10F;
+        var hud_y = 10F;
+	    var hudHeight = 40F;
+	    var hudWidth = 300f;
+
+        _hudDisplay = new Rect(hud_x, hud_y , hudWidth,hudHeight);
 	}
 	
 	// Update is called once per frame
@@ -132,8 +149,17 @@ public class GamePlayUI : MonoBehaviour {
         if (IsDead)
         {
             PauseGame();
-            _gameOverRect = GUI.Window(0, _gameOverRect, GameOverMenu, "");
+            _gameOverRect = GUI.Window(1, _gameOverRect, GameOverMenu, "");
         }
+
+        if (!GamePaused && !IsDead)
+        {
+            //Use the default Skin for this
+            //GUI.skin = null;
+
+            RenderHUD();
+        }
+
     }
 
 
@@ -181,5 +207,29 @@ public class GamePlayUI : MonoBehaviour {
         playerState.treasure = 0;
         IsDead = false;
     }
+
+    // HUD stuff
+
+    void RenderHUD()
+    {
+        var playerState = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerState>();
+
+        var health = playerState.GetHealth();
+        var score = playerState.GetTreasure();
+
+        GUI.Box(_hudDisplay,"");
+
+        var healthRect = _hudDisplay;
+        healthRect.x += 10;
+        healthRect.width = _hudDisplay.width/2;
+        GUI.Label(healthRect,"Health: " + health);
+
+        var scoreRect = _hudDisplay;
+        scoreRect.x += (_hudDisplay.width / 2);
+        scoreRect.width = _hudDisplay.width/2;
+        GUI.Label(scoreRect,"Score: " + score);
+
+    }
+
 
 }
