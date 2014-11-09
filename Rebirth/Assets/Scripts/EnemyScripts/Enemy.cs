@@ -16,6 +16,9 @@ public class Enemy : MonoBehaviour
     public AudioSource zombieIsHit;
     public int Health;
 
+    public float TakeDamageFreq;
+    private float _nextTakeDamage;
+
     // Use this for initialization
     private void Start()
     {
@@ -31,8 +34,12 @@ public class Enemy : MonoBehaviour
         InPursuit = false;
 
         //Freqeuency in which enemy does damage to the player
-        AtackFreq = 2f; //Eveery 2s
+        AtackFreq = .5f; //Eveery 2s
         _nextAttack = 0f;
+
+        //Used so enemy can have health
+        TakeDamageFreq = .4f;
+        _nextTakeDamage = 0f;
 
         TouchingPlayer = false;
     }
@@ -85,15 +92,18 @@ public class Enemy : MonoBehaviour
     }
 
 
-    //Changed to continuously deal damage and not kill the enemy
-    private void OnTriggerStay(Collider other)
+
+    private void OnTriggerEnter(Collider other)
     {
         // Debug.Log(other.gameObject.name);
 
         var playerState = GameObject.Find("PlayerSprite").GetComponent<PlayerState>();
 
-        if (other.tag == "Player" || other.gameObject.tag == "Player")
+        if (other.tag == "Player" || other.gameObject.tag == "Player" || other.name == "PlayerSprite")
         {
+
+            Debug.Log(this.name + "Touching Player");
+
             //GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerState>().DealDamage(Damage);
 
             TouchingPlayer = true;
@@ -123,10 +133,16 @@ public class Enemy : MonoBehaviour
 				//Make demon sounds
 			}
 
-            Debug.Log("Health Before : " + Health);
             //Lose one health
-            Health--;
-            Debug.Log("Health After : " + Health);
+            
+            //Prevents enemy from being hurt twice in one trigger by forcing it to wait
+            if (Time.time > _nextTakeDamage)
+            {
+                _nextTakeDamage = Time.time + TakeDamageFreq;
+                Health--;
+            }
+
+
             if (Health <= 0)
             {
 				if (gameObject.name == "Demon")
@@ -151,5 +167,30 @@ public class Enemy : MonoBehaviour
             //Destroy the Bullet this solves an issue with collisions
             Destroy(other.gameObject);
         }
+    }
+
+
+    //Changed to continuously deal damage and not kill the enemy
+    private void OnTriggerStay(Collider other)
+    {
+        // Debug.Log(other.gameObject.name);
+
+        var playerState = GameObject.Find("PlayerSprite").GetComponent<PlayerState>();
+
+        if (other.tag == "Player" || other.gameObject.tag == "Player" || other.name == "PlayerSprite")
+        {
+            //GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerState>().DealDamage(Damage);
+
+            TouchingPlayer = true;
+			if (Time.time > _nextAttack)
+			{
+				_nextAttack = Time.time + AtackFreq;
+				playerState.DealDamage(Damage);
+			}
+		}
+		else
+		{
+			TouchingPlayer = false;
+		}
     }
 }
