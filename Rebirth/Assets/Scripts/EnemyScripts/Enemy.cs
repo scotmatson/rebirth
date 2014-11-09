@@ -159,7 +159,7 @@ public class Enemy : MonoBehaviour
 				{
 					//Destroy the Enemy
                 	Destroy(gameObject);
-                	playerState.KilledEnemyTreasure(10f);
+                	playerState.KilledEnemyTreasure(5f);
 				}
             }
            

@@ -35,7 +35,7 @@ public class PlayerState : MonoBehaviour {
 
     public  void KilledEnemyTreasure(float treasure)
     {
-        treasure += treasure;
+        this.treasure += treasure;
     }
 
     public  float GetHealth()
