@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Collections;
 
 public class Enemy : MonoBehaviour
 {
@@ -14,18 +15,19 @@ public class Enemy : MonoBehaviour
     public bool isAlive;
     public AudioSource zombieIsHit;
     public int Health;
-	
+
     // Use this for initialization
     private void Start()
     {
         isAlive = true;
         _playerTarget = GameObject.FindGameObjectWithTag("Player");
+
         zombieIsHit = GetComponent<AudioSource>();
         _cont = GetComponent<CharacterController>();
         Speed = 2;
         Damage = 10f;
         //Can we set up separate puruit variables for x and y axis?
-        PursuitDistance = 15; //Enemies that exist just outside of the width of the viewport will pursue.
+        PursuitDistance = 20; //Enemies that exist just outside of the width of the viewport will pursue.
         InPursuit = false;
 
         //Freqeuency in which enemy does damage to the player
@@ -37,15 +39,19 @@ public class Enemy : MonoBehaviour
 
     private void Update()
     {
-        if (!isAlive)
-        {
-            Destroy(gameObject);
-        }
+	   //I'm not sure we need this script. We are addressing Enemy through bullet collision
+       //and health checks on line 150
+       //if (!isAlive)
+       // {
+       //     Destroy(gameObject);
+       // }
+
         if (!InPursuit)
         {
             InPursuit = ShouldPursuit();
         }
-        else
+        
+		else
         {
             if (!TouchingPlayer)
             {
@@ -71,6 +77,11 @@ public class Enemy : MonoBehaviour
         //Updating with .Move so that it obeys CharacterController Physics e.g dont go through walls
         Vector3 newPosition = transform.forward * Speed;
         _cont.Move(newPosition*Time.deltaTime);
+
+		if(gameObject.name == "Demon") 
+		{
+			gameObject.animation.Play ("Walk");
+		}
     }
 
 
@@ -85,20 +96,19 @@ public class Enemy : MonoBehaviour
         {
             //GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerState>().DealDamage(Damage);
 
-            if (Time.time > _nextAttack)
-            {
-                _nextAttack = Time.time + AtackFreq;
-                playerState.DealDamage(Damage);
-            }
-
             TouchingPlayer = true;
-        }
-        else
-        {
-            TouchingPlayer = false;
-        }
-
-        //Dont try this at home. For some reason it doesnt like the tag...
+			if (Time.time > _nextAttack)
+			{
+				_nextAttack = Time.time + AtackFreq;
+				playerState.DealDamage(Damage);
+			}
+		}
+		else
+		{
+			TouchingPlayer = false;
+		}
+		
+		//Dont try this at home. For some reason it doesnt like the tag...
         if (other.gameObject.tag == "Bullet" || other.tag == "Bullet" || other.name == "Bullet(Clone)")
         {
             //Gives Player Treasure for killing enemy with axe
@@ -108,11 +118,11 @@ public class Enemy : MonoBehaviour
             {
                 AudioSource.PlayClipAtPoint(zombieIsHit.clip, Camera.main.transform.position);
             }
-			//Shell for Demon script
 			if (gameObject.name == "Demon")
 			{
-
+				//Make demon sounds
 			}
+
             Debug.Log("Health Before : " + Health);
             //Lose one health
             Health--;
@@ -121,7 +131,13 @@ public class Enemy : MonoBehaviour
             {
 				if (gameObject.name == "Demon")
 				{
-					//End the game
+					Debug.Log("Should Die.");
+					isAlive = false;
+					// Next two variables needed to allow the demon to die.
+					InPursuit = false;
+					PursuitDistance = 0;
+					gameObject.animation.Play("Death");
+				
 				}
 				else
 				{
