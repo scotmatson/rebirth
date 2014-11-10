@@ -134,7 +134,8 @@ public class Enemy : MonoBehaviour
             //Gives Player Treasure for killing enemy with axe
             //GetComponent<AudioSource> ().Play ();
             //Triggers zombie groan sound when taking damage if this enemy is in fact a zombie
-            if (gameObject.name == "ZombieWalker" || gameObject.name == "ZombieCrawler")
+            if (gameObject.name == "ZombieWalker" || gameObject.name == "ZombieCrawler" ||
+			    gameObject.name == "ZombieWalker(Clone)" || gameObject.name == "ZombieCrawler(Clone)")
             {
                 AudioSource.PlayClipAtPoint(zombieIsHit.clip, Camera.main.transform.position);
             }
