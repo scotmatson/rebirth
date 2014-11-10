@@ -5,6 +5,7 @@ public class GamePlayUI : MonoBehaviour {
 
     public bool GamePaused;
     public bool IsDead;
+    public bool WonGame;
 
     public GUIStyle hudStyle;
 
@@ -12,6 +13,8 @@ public class GamePlayUI : MonoBehaviour {
 
     private Rect _pauseMenuRect;
     private Rect _gameOverRect;
+    private Rect _winScreenRect;
+
     public Rect _hudDisplay;
     
     
@@ -103,6 +106,7 @@ public class GamePlayUI : MonoBehaviour {
 
 	    GamePaused = false;
 	    IsDead = false;
+	    WonGame = false;
 
         _gameMusic = GameObject.Find("Main Camera");
         _ravenCaw = GameObject.Find("Raven");
@@ -116,6 +120,7 @@ public class GamePlayUI : MonoBehaviour {
 	    var y = (Screen.height/2) - (_height/2);
         _pauseMenuRect = new Rect(x,y,_width,_height);
         _gameOverRect = new Rect(x,y,_width,_height);
+        _winScreenRect = new Rect(x,y,_width,_height);
 
 
 	    var hud_x = 10F;
@@ -152,6 +157,12 @@ public class GamePlayUI : MonoBehaviour {
 			PauseGame ();
             _gameOverRect = GUI.Window(1, _gameOverRect, GameOverMenu, "");
 
+        }
+
+        if (WonGame)
+        {
+            PauseGame();
+            _winScreenRect = GUI.Window(4, _gameOverRect, WonGameMenu, "");
         }
 
         if (!GamePaused && !IsDead)
@@ -201,12 +212,9 @@ public class GamePlayUI : MonoBehaviour {
 
     private void ResetConfig()
     {
-
-        var playerState = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerState>();
-
         //Resets Basic Player State
-        playerState.health = 100;
-        playerState.treasure = 0;
+        PlayerState.health = 100;
+        PlayerState.treasure = 0;
         IsDead = false;
     }
 
@@ -214,10 +222,10 @@ public class GamePlayUI : MonoBehaviour {
 
     void RenderHUD()
     {
-        var playerState = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerState>();
 
-        var health = playerState.GetHealth();
-        var score = playerState.GetTreasure();
+
+        var health = PlayerState.GetHealth();
+        var score = PlayerState.GetTreasure();
 
         GUI.Box(_hudDisplay,"");
 
@@ -231,4 +239,30 @@ public class GamePlayUI : MonoBehaviour {
         scoreRect.width = _hudDisplay.width/2;
         GUI.Label(scoreRect,"Score: " + score);
     }
+
+    //Won Game Stuff
+    void WonGameMenu(int windowId)
+    {
+        GUILayout.BeginVertical();
+        GUILayout.Label("You Win!");
+
+        if (GUILayout.Button("Main Menu"))
+        {
+            ResetConfig();
+            UnPause();
+
+            MainMenu();
+        }
+
+        if (GUILayout.Button("Exit"))
+        {
+            Application.Quit();
+        }
+
+        GUILayout.Space(8);
+        GUILayout.EndVertical();
+        GUI.DragWindow(new Rect(0, 0, 10000, 10000));
+    }
+
+
 }

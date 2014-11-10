@@ -3,19 +3,23 @@ using System.Collections;
 
 public class PlayerState : MonoBehaviour {
 
-	public  float health;
-	public  float treasure;
+	public  static float health = 100f;
+	public  static float treasure = 0f;
 	public bool isAlive;
 	public AudioSource playerGetsHit;
 
+    public float currentLevelHealth;
+    public float currentLevelTreaure;
 
 	// Use this for initialization
 	void Start () {
-		health = 100F;
-		treasure = 0F;
 		isAlive = true;
 		AudioSource[] playerAudio = GetComponents<AudioSource>();
 		playerGetsHit = playerAudio [1];
+
+	    currentLevelHealth = PlayerState.health;
+	    currentLevelTreaure = PlayerState.treasure;
+
 	}
 	
 	// Update is called once per frame
@@ -37,19 +41,19 @@ public class PlayerState : MonoBehaviour {
     }
 
 
-    public  void KilledEnemyTreasure(float treasure)
+    public static void KilledEnemyTreasure(float treasure)
     {
-        this.treasure += treasure;
+        PlayerState.treasure += treasure;
     }
 
-    public  float GetHealth()
+    public static float GetHealth()
     {
-        return health;
+        return PlayerState.health;
     }
 
-    public  float GetTreasure()
+    public static float GetTreasure()
     {
-        return treasure;
+        return PlayerState.treasure;
     }
 
 }

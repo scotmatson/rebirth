@@ -17,6 +17,9 @@ public class Enemy : MonoBehaviour
     public int Health;
 	private GameObject demon;
 
+
+    public bool IsBoss;
+
     public float TakeDamageFreq;
     private float _nextTakeDamage;
 
@@ -152,7 +155,8 @@ public class Enemy : MonoBehaviour
 
             if (Health <= 0)
             {
-				if (gameObject.name == "Demon")
+                //changed spelling to match with the lowercase d
+				if (gameObject.name == "demon")
 				{
 					Debug.Log("Should Die.");
 					isAlive = false;
@@ -160,13 +164,15 @@ public class Enemy : MonoBehaviour
 					InPursuit = false;
 					PursuitDistance = 0;
 					gameObject.animation.Play("Death");
-				
+
+				    GameObject.FindGameObjectWithTag("Player").GetComponent<GamePlayUI>().WonGame = true;
+
 				}
 				else
 				{
 					//Destroy the Enemy
                 	Destroy(gameObject);
-                	playerState.KilledEnemyTreasure(5f);
+                	PlayerState.KilledEnemyTreasure(5f);
 				}
             }
            
