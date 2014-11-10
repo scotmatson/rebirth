@@ -15,8 +15,6 @@ public class Enemy : MonoBehaviour
     public bool isAlive;
     public AudioSource zombieIsHit;
     public int Health;
-	private GameObject demon;
-
 
     public bool IsBoss;
 
