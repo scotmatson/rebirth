@@ -88,7 +88,7 @@ AudioSource:
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: 701356f64fa63b44893bc68d2417ba7c, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: .663999975
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -171,6 +171,7 @@ MonoBehaviour:
   isAlive: 0
   zombieIsHit: {fileID: 0}
   Health: 2
+  IsBoss: 0
   TakeDamageFreq: 0
 --- !u!114 &11400002
 MonoBehaviour:
