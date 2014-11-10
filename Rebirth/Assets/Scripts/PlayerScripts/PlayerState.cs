@@ -6,12 +6,16 @@ public class PlayerState : MonoBehaviour {
 	public  float health;
 	public  float treasure;
 	public bool isAlive;
+	public AudioSource playerGetsHit;
+
 
 	// Use this for initialization
 	void Start () {
 		health = 100F;
 		treasure = 0F;
 		isAlive = true;
+		AudioSource[] playerAudio = GetComponents<AudioSource>();
+		playerGetsHit = playerAudio [1];
 	}
 	
 	// Update is called once per frame
@@ -19,7 +23,6 @@ public class PlayerState : MonoBehaviour {
 	    if (health <= 0)
 	    {
 	        isAlive = false;
-           // Destroy(this.gameObject); 
 	        GameObject.FindGameObjectWithTag("Player").GetComponent<GamePlayUI>().IsDead = true;
 	    }
 	}
@@ -28,7 +31,7 @@ public class PlayerState : MonoBehaviour {
     public  void DealDamage(float damage)
     {
         Debug.Log("Health before: " + health);
-		GetComponent<AudioSource> ().Play ();
+		playerGetsHit.Play ();
         health -= damage;
         Debug.Log("Health after: " + health);
     }

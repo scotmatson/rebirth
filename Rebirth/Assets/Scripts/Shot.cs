@@ -6,15 +6,12 @@ public class Shot : MonoBehaviour {
 
 	public float Speed = 10.0f;
     public FacingDirection Direction;
-	public AudioSource axeSwung;
     //public GameObject parent;
 
     void Start()
     {
         //This needs to be updated so its not hardcoded to PlayerSpriter
         Direction = GameObject.Find("PlayerSprite").GetComponent<Player>().Direction;
-		axeSwung = GetComponent<AudioSource> ();
-		AudioSource.PlayClipAtPoint(axeSwung.clip, Camera.main.transform.position);
     }
 
 

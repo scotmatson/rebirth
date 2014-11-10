@@ -5,6 +5,7 @@ public class GamePlayUI : MonoBehaviour {
 
     public bool GamePaused;
     public bool IsDead;
+
     public GUIStyle hudStyle;
 
     public GUISkin guiSkin;
@@ -148,8 +149,9 @@ public class GamePlayUI : MonoBehaviour {
         }
         if (IsDead)
         {
-            PauseGame();
+			PauseGame ();
             _gameOverRect = GUI.Window(1, _gameOverRect, GameOverMenu, "");
+
         }
 
         if (!GamePaused && !IsDead)
@@ -228,8 +230,5 @@ public class GamePlayUI : MonoBehaviour {
         scoreRect.x += (_hudDisplay.width / 2);
         scoreRect.width = _hudDisplay.width/2;
         GUI.Label(scoreRect,"Score: " + score);
-
     }
-
-
 }

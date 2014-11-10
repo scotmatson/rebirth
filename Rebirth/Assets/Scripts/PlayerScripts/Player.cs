@@ -13,6 +13,7 @@ public class Player : MonoBehaviour {
     private Animator _anim;
     private CharacterController _cont;
     private float _nextThrow ;
+	public AudioSource playerSwingsAxe;
 
     // Use this for initialization
     void Start () {
@@ -22,6 +23,8 @@ public class Player : MonoBehaviour {
         Direction = FacingDirection.RIGHT;
         IsPaused = false;
 		ThrowingFrequency = 0.5f;
+		AudioSource[] playerAudio = GetComponents<AudioSource>();
+		playerSwingsAxe = playerAudio [0];
     }
 	
     // Update is called once per frame
@@ -84,7 +87,7 @@ public class Player : MonoBehaviour {
 	    {
             //Next Time Available to throw
 	        _nextThrow = Time.time + ThrowingFrequency;
-
+			playerSwingsAxe.Play ();
             Instantiate(ShootableGameObject, spawnPosition, transform.rotation);
 	    }
 	}

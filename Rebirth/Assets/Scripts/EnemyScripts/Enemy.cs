@@ -15,6 +15,7 @@ public class Enemy : MonoBehaviour
     public bool isAlive;
     public AudioSource zombieIsHit;
     public int Health;
+	private GameObject demon;
 
     public float TakeDamageFreq;
     private float _nextTakeDamage;
@@ -85,7 +86,7 @@ public class Enemy : MonoBehaviour
         Vector3 newPosition = transform.forward * Speed;
         _cont.Move(newPosition*Time.deltaTime);
 
-		if(gameObject.name == "Demon") 
+		if(gameObject.name == "Demon" && !TouchingPlayer) 
 		{
 			gameObject.animation.Play ("Walk");
 		}
@@ -107,8 +108,14 @@ public class Enemy : MonoBehaviour
             //GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerState>().DealDamage(Damage);
 
             TouchingPlayer = true;
+
 			if (Time.time > _nextAttack)
 			{
+				if(gameObject.name == "Demon") 
+				{
+					gameObject.animation.Play ("Punch");
+				}
+
 				_nextAttack = Time.time + AtackFreq;
 				playerState.DealDamage(Damage);
 			}
@@ -184,6 +191,10 @@ public class Enemy : MonoBehaviour
             TouchingPlayer = true;
 			if (Time.time > _nextAttack)
 			{
+				if(gameObject.name == "Demon") 
+				{
+					gameObject.animation.Play ("Punch");
+				}
 				_nextAttack = Time.time + AtackFreq;
 				playerState.DealDamage(Damage);
 			}

@@ -73,7 +73,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.07821226, y: 1, z: 9.42427063}
+  m_LocalPosition: {x: 90.2340622, y: 1, z: 82.8745956}
   m_LocalScale: {x: .997955382, y: .997955024, z: .997955024}
   m_Children:
   - {fileID: 400000}
@@ -162,6 +162,7 @@ MonoBehaviour:
   isAlive: 0
   zombieIsHit: {fileID: 0}
   Health: 1
+  TakeDamageFreq: 0
 --- !u!135 &13500000
 SphereCollider:
   m_ObjectHideFlags: 1
