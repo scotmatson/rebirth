@@ -43,7 +43,7 @@ public class Shot : MonoBehaviour {
     {
         //Destroys Axe if it hits anything other than Player and Enemy
         //The Axe gets destroyed by Enemy in Enemy script for other reasons
-        if (col.tag != "Player" && col.tag != "Enemy" && col.name != "Bounded View")
+		if (col.tag != "Player" && col.tag != "Enemy" && col.name != "Bounded View" && col.name != "Raven")
         {
              Destroy(this.gameObject);
         }
