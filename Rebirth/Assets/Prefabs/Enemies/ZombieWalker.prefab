@@ -30,6 +30,7 @@ GameObject:
   - 143: {fileID: 14300000}
   - 54: {fileID: 5400000}
   - 82: {fileID: 8200000}
+  - 114: {fileID: 11400002}
   m_Layer: 0
   m_Name: ZombieWalker
   m_TagString: Enemy
@@ -56,7 +57,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: -.99567771, z: 0, w: -.0928760692}
-  m_LocalPosition: {x: 5.13342285, y: 1, z: -21.2359886}
+  m_LocalPosition: {x: 108.218681, y: 1, z: 48.9431496}
   m_LocalScale: {x: 2.75957346, y: 2.75957346, z: 2.75957346}
   m_Children:
   - {fileID: 400000}
@@ -170,6 +171,18 @@ MonoBehaviour:
   isAlive: 0
   zombieIsHit: {fileID: 0}
   Health: 2
+  TakeDamageFreq: 0
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cba9ab182c7cfc044a8b76e14f125ed4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!135 &13500000
 SphereCollider:
   m_ObjectHideFlags: 1

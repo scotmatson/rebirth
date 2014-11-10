@@ -86,7 +86,6 @@ public class Player : MonoBehaviour {
 	        _nextThrow = Time.time + ThrowingFrequency;
 
             Instantiate(ShootableGameObject, spawnPosition, transform.rotation);
-			GetComponent<AudioSource> ().Play ();
 	    }
 	}
 

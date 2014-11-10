@@ -28,6 +28,7 @@ public class PlayerState : MonoBehaviour {
     public  void DealDamage(float damage)
     {
         Debug.Log("Health before: " + health);
+		GetComponent<AudioSource> ().Play ();
         health -= damage;
         Debug.Log("Health after: " + health);
     }
