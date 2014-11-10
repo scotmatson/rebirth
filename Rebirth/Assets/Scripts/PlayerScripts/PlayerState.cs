@@ -8,17 +8,14 @@ public class PlayerState : MonoBehaviour {
 	public bool isAlive;
 	public AudioSource playerGetsHit;
 
-    public float currentLevelHealth;
-    public float currentLevelTreaure;
+	public static float currentLevelHealth = 100f;
+	public static float currentLevelTreaure = 0f;
 
 	// Use this for initialization
 	void Start () {
 		isAlive = true;
 		AudioSource[] playerAudio = GetComponents<AudioSource>();
 		playerGetsHit = playerAudio [1];
-
-	    currentLevelHealth = PlayerState.health;
-	    currentLevelTreaure = PlayerState.treasure;
 
 	}
 	

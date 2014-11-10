@@ -43,6 +43,7 @@ public class GamePlayUI : MonoBehaviour {
         {
             UnPause();
             //Sets the Scene to Current Level Index
+			ResetConfigLevel();
             RestartLevel();
         }
 
@@ -162,7 +163,7 @@ public class GamePlayUI : MonoBehaviour {
         if (WonGame)
         {
             PauseGame();
-            _winScreenRect = GUI.Window(4, _gameOverRect, WonGameMenu, "");
+            _winScreenRect = GUI.Window(4, _winScreenRect, WonGameMenu, "");
         }
 
         if (!GamePaused && !IsDead)
@@ -186,7 +187,7 @@ public class GamePlayUI : MonoBehaviour {
 
         if (GUILayout.Button("Restart Level"))
         {
-            ResetConfig();
+            ResetConfigLevel();
             UnPause();
 
             RestartLevel();
@@ -209,6 +210,13 @@ public class GamePlayUI : MonoBehaviour {
         GUILayout.EndVertical();
         GUI.DragWindow(new Rect(0, 0, 10000, 10000));
     }
+
+
+	private void ResetConfigLevel() {
+		PlayerState.health = PlayerState.currentLevelHealth;
+		PlayerState.treasure = PlayerState.currentLevelTreaure;
+		IsDead = false;
+	}
 
     private void ResetConfig()
     {

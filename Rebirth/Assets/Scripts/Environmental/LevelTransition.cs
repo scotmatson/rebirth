@@ -9,7 +9,10 @@ public class LevelTransition : MonoBehaviour {
 
         if (col.tag == "Player")
         {
-            // Load the Next Level
+            //Set the States of the next level
+			PlayerState.currentLevelHealth = PlayerState.health;
+			PlayerState.currentLevelTreaure = PlayerState.treasure;
+			//Load the next level
             Application.LoadLevel(Application.loadedLevel + 1);
         }
 
