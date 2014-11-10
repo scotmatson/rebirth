@@ -155,7 +155,7 @@ public class Enemy : MonoBehaviour
             if (Health <= 0)
             {
                 //changed spelling to match with the lowercase d
-				if (gameObject.name == "demon")
+				if (gameObject.name == "Demon")
 				{
 					Debug.Log("Should Die.");
 					isAlive = false;
